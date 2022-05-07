@@ -53,8 +53,9 @@ typical filename glob patterns like `*` and `?`.
 
 The `exclude` key can be used to prevent paths from being included in a
 workspace. This can be useful if some path dependencies aren't desired to be
-in the workspace at all, or using a glob pattern and you want to remove a
-directory.
+in the workspace at all, or if using a glob pattern for `members` and you want
+to exclude a specific directory (note glob patterns are not supported in
+`exclude`).
 
 An empty `[workspace]` table can be used with a `[package]` to conveniently
 create a workspace with the package and all of its path dependencies.
